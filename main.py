@@ -6,4 +6,4 @@ if __name__ == '__main__':
     print(len(c.parseCode('310053')))
     print(c.parseCode('317100')[0])
     # 错误用例 =>
-    print(c.parseCode('000000'))
+    print(c.parseCode('hello'))
