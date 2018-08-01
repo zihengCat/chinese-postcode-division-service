@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+import os
 import json
 # Chinese PostCode Division Service Class
 class PostCodeDivisionService(object):
