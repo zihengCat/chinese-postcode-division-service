@@ -10,7 +10,7 @@ class PostCodeDivisionService(object):
     # }
     def __init__(self):
         # Core Data Structure => dict()
-        self._postcode_dict = __do_init_process()
+        self._postcode_dict = self.__do_init_process()
     #/*
     # - API:    parseCode()
     # - Input:  post_code (`str`)
