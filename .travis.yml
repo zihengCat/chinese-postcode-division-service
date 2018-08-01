@@ -13,7 +13,7 @@ python:
 before_script:
 
 script:
-    - "unzip ./db/postcode.zip && python main.py"
+    - "unzip ./db/postcode.zip ./db/ && python main.py"
 
 after_script:
 
