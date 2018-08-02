@@ -1,5 +1,7 @@
 # Chinese PostCode Division Service
 
+[![Build Status](https://travis-ci.com/zihengCat/chinese-postcode-division-service.svg?branch=master)](https://travis-ci.com/zihengCat/chinese-postcode-division-service)
+
 中华人民共和国邮政编码数据服务模块「Python Module」。
 
 An Chinese PostCode Division Service Module for `Python`.
@@ -8,9 +10,10 @@ An Chinese PostCode Division Service Module for `Python`.
 
 此模块**同时兼容`Python2`与`Python3`，且无「第三方」依赖项**。
 
-1. 导入模块
-2. 初始化类实例
-3. 调用解析方法
+1. 解压缩`db/postcode.zip`
+2. 导入模块
+3. 初始化类实例
+4. 调用解析方法
 
 | API                        | 说明           |
 | -------------------------- | -------------- |
@@ -32,6 +35,8 @@ print(i)
 > 代码清单：示例代码「详见`main.py`」
 
 # Data Source（数据来源）
+
+详情参看：`db/postcode.zip`
 
 # License（许可协议）
 
