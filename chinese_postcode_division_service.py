@@ -12,6 +12,7 @@ class PostCodeDivisionService(object):
     def __init__(self):
         # Core Data Structure => dict()
         self._postcode_dict = self.__do_init_process()
+        print("Get records: %s" % len(self._postcode_dict))
     #/*
     # - API:    parseCode()
     # - Input:  post_code (`str`)
@@ -25,7 +26,7 @@ class PostCodeDivisionService(object):
     def __do_init_process(self):
         postcode_dict = dict()
         for i in range(0, 6 + 1, 1):
-            # File Blocks => x00 -> x06
+            # File Blocks => [x00 -> x06]
             f_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                      'db/x0%d' % i)
             #        'db/postcode.txt')
