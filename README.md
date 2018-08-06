@@ -10,7 +10,7 @@ An Chinese PostCode Division Service Module for `Python`.
 
 此模块**同时兼容`Python2`与`Python3`，且无「第三方」依赖项**。
 
-1. 解压缩`db/postcode.zip`
+1. 运行`db/`「解压缩`db/postcode.zip` && 文件分割」
 2. 导入模块
 3. 初始化类实例
 4. 调用解析方法

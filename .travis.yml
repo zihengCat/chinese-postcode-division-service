@@ -14,9 +14,8 @@ before_script:
 
 script:
     - "PYTHONPATH=`pwd`"
-    - "unzip ./db/postcode.zip -d ./db/"
     - "cd ./db"
-    - "bash split_postcode_file.sh"
+    - "sh unzip_and_split.sh"
     - "cd ${PYTHONPATH} && python main.py"
 
 after_script:
