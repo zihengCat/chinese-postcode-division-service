@@ -13,7 +13,11 @@ python:
 before_script:
 
 script:
-    - "unzip ./db/postcode.zip -d ./db/ && python main.py"
+    - "PYTHONPATH=`pwd`"
+    - "unzip ./db/postcode.zip -d ./db/"
+    - "cd ./db"
+    - "bash split_postcode_file.sh"
+    - "cd ${PYTHONPATH} && python main.py"
 
 after_script:
 
